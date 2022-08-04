@@ -1,0 +1,134 @@
+.inquiry {
+  width: 600px;
+  margin: 0 auto;
+  font-size: 14px;
+}
+.inquiry h1 {
+  text-align: center;
+  font-size: 20px;
+  padding: 30px 0;
+}
+
+
+/* お問い合わせ */
+.inquiry-table {
+  width: 100%;
+}
+.inquiry-table tr {
+  display: table-row;
+  border-bottom: transparent 30px solid;
+}
+.category {
+  text-align: left;
+  vertical-align: top;
+  width: 150px;
+  padding-top: 8px;
+}
+.category span {
+  color: red;
+}
+.flex-td {
+  display: flex;
+  justify-content: space-between;
+}
+.name {
+  width: 48%;
+}
+input, textarea{
+  width: 100%;
+  padding: 7px;
+  border: rgb(156, 156, 156) 1px solid;
+  border-radius: 5px;
+  resize: none;
+}
+input.postcode {
+  width: 410px;
+}
+.post-symbol {
+  padding: 10px 0 0 10px;
+  font-weight: bold;
+}
+input[type=radio] {
+  display: none;
+}
+.radio::before {
+  content: "";
+  position: relative;
+  background-color: white;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: rgb(156, 156, 156) 1px solid;
+  border-radius: 50%;
+  margin-right: 10px;
+  top: 10px;
+}
+.radio{
+  position: relative;
+  top:-15px;
+  padding-right: 40px;
+}
+input[type=radio]:checked + .radio::before {
+  background: radial-gradient(black 4px, white 25%);
+}
+.inquiry-table p {
+  color: rgb(156, 156, 156);
+  padding: 10px 0 0 20px;
+}
+p.error {
+  color: red;
+}
+.error span {
+  font-weight: bold;
+}
+.inquiry-form button {
+  display: block;
+  margin: 0 auto;
+  padding: 7px 40px;
+}
+.button + p.error {
+  text-align: center;
+  margin: 10px 0;
+}
+.here {
+  color: #1b94e0	;
+  cursor: pointer;
+}
+
+
+
+/* 内容確認ページ */
+.confirm-table {
+  margin-top: 20px;
+}
+.confirm-table tr {
+  display: table-row;
+  border-bottom: transparent 60px solid;
+}
+.confirm-category {
+  text-align: left;
+  vertical-align: top;
+  width: 150px;
+}
+.button.submit {
+  display: block;
+  margin: 0 auto;
+  padding: 7px 40px;
+}
+.edit {
+  color: black;
+  display: block;
+  width: fit-content;
+  margin: 10px auto;
+  font-size: 12px;
+}
+
+
+/* サンクスページ */
+.thank button a{
+  text-decoration: none;
+  color: white;
+}
+.thank button {
+  padding: 7px 15px;
+}
